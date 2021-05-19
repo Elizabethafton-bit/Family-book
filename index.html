@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>My family book</title>
+        <h1>My family book</h1>
+        <img src="https://www.iconbolt.com/iconsets/streamline-emoji/family-man-woman-girl-girl-2.svg"style="width: 30%"id="Family_member_image">
+        <button onclick="update();">Next</button>
+    </head>
+    <script>
+        var images=["https://image.shutterstock.com/image-vector/woman-presenting-making-gesture-600w-132641489.jpg","https://image.shutterstock.com/image-vector/illustration-featuring-male-businessman-wearing-600w-234744016.jpg","https://image.shutterstock.com/image-vector/illustration-teenage-girl-holding-paper-600w-1212104071.jpg","https://dthezntil550i.cloudfront.net/u9/latest/u92102172334081770018481830/1280_960/787f5a8a-63a5-414b-a2bf-d2fdfdcd45e0.png"];
+        console.log(images);
+        var names=["Family book","Priya Kumar","Shasank prasad","Shefali Sharan","And Me!(Shreya Sharan)"];
+        console.log(names);
+        var i= 0;
+        function update()
+        {
+            i++;
+            var number_of_family_member_in_array=5
+            if(i>number_of_family_member_in_array)
+        {
+            i=0;
+        }
+        var updatedImage= images[1];
+        var updatedNames= names[1];
+        document.getElementById("family_member_image").src=updatedImage;
+        document.getElementById("family_member_name").src=updatedNames;
+    }
+    </script>
+</html>
